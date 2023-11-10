@@ -7,25 +7,18 @@ public class MusicPause : MonoBehaviour
 
     public AudioSource MusicPlayer;
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter()
     {
-
-        
 
         MusicPlayer.Pause();
 
-
     }
 
-
-
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerExit()
     {
-
-        
 
         MusicPlayer.Play();
 
-
     }
+
 }

@@ -2,17 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlaySFX : MonoBehaviour
+
+namespace PlayTheSoundEffects
 {
-    public AudioSource SFX;
-
-    private void OnTriggerEnter(Collider other)
+    public class PlaySFX : MonoBehaviour
     {
+        public AudioSource SFX;
 
-        SFX.Play();
+        private void OnTriggerEnter()
+        {
+
+            SFX.Play();
+        }
+
     }
-
-
-
-
 }
+
+
